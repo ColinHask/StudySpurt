@@ -1,6 +1,6 @@
 # StudySpurt
 
-StudySpurt is a simple application designed to keep you on track while studying using the Pomodoro technique. It helps you manage your study and break times efficiently to enhance focus and productivity.
+StudySpurt is a simple application designed to keep you on track while studying using the Pomodoro technique! It helps you manage your study and break times efficiently to enhance focus and productivity.
 
 ## Features
 
@@ -20,7 +20,7 @@ StudySpurt is a simple application designed to keep you on track while studying 
   - Allows you to input notes on what you've learned or completed during the session.
 
 - **User-Friendly Interface**
-  - Intuitive start screen with a brief explanation and a start button.
+  - Simple start screen with a brief explanation and a start button.
   - Easy navigation between study and break sessions.
 
 ## How It Works
