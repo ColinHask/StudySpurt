@@ -1,0 +1,70 @@
+MAIN CONCEPT:
+    25 minute timer for studying (progress bar and timer display)(confetti popup / sound when complete)
+    then
+    5 minute break timer (progress bar and timer display)(buzzer sound when complete + screen popup)
+    (optional / future ideas) goal checklist and note taking features
+
+
+INTRO WINDOW:
+    Quick description text lable explaining how it works
+    Start button (activates 25min timer)
+    (optional) checklist creator to make a list of goals to complete in study session
+
+    |
+    V
+
+25 MINUTE TIMER WINDOW:
+    25 minute timer countdown
+    progress bar widget below timer
+    +5 minute button 
+    pause button
+    quit button
+    overlay of confetti / noise when timer ends
+    (optional) side bar checklist containing study goals entered in intro window
+
+    |
+    V
+
+POST MINI-STUDY WINDOW:
+    header with a congrats / break time message containing number of spurts completed
+    total study time displayed
+    opportunity to enter things learned/completed
+    button to start 5 minute timer (break)
+    quit button
+    (optional) opportunity to check off items from checklist
+
+    |
+    V
+
+5 MINUTE BREAK WINDOW:
+    5 minute timer countdown
+    progress bar widget below timer
+    quit button
+    overlay of alert / noise when timer ends
+
+    |
+    V
+
+PRE MINI-STUDY WINDOW:
+    header: start study spurt #<spurt number>
+    button to start 25 minute timer (study)
+    quit button
+    (optional) opportunity to enter things to goal checklist
+    (optional) display of goal checklist
+
+
+QUIT SCREEN:
+    Overveiw of all time studied and number of Spurts
+    Overveiw of all things user has entered as completed
+    "Nevermind" button to continue studying (goes into pre-study window)
+    "quit" button to exit application
+    (optional) overveiw of unfinished tasks/goals
+    (optional) note text editor to jot down final remarks
+
+OPTIONAL / LATER FEATURE IDEAS:
+    goal checklist
+    note taking with auto saving
+    saving, to allow for day usage "streaks" and stat tracking (txt files or json)
+    achievments based on tracked stats
+
+    
