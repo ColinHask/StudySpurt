@@ -25,7 +25,7 @@ INTRO WINDOW:
     |
     V
 
-POST MINI-STUDY WINDOW:
+POST STUDY SPURT WINDOW:
     header with a congrats / break time message containing number of spurts completed
     total study time displayed
     opportunity to enter things learned/completed
@@ -45,7 +45,7 @@ POST MINI-STUDY WINDOW:
     |
     V
 
-PRE MINI-STUDY WINDOW:
+PRE STUDY SPURT WINDOW:
     header: start study spurt #<spurt number>
     button to start 25 minute timer (study)
     quit button
@@ -60,6 +60,7 @@ QUIT SCREEN:
     "quit" button to exit application
     (optional) overveiw of unfinished tasks/goals
     (optional) note text editor to jot down final remarks
+
 
 OPTIONAL / LATER FEATURE IDEAS:
     goal checklist
