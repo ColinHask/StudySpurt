@@ -78,10 +78,18 @@ class MainWindow(QMainWindow):
         #Layout is used by central widget to define layout
         layout = QVBoxLayout()
 
-        #add widgets to layout:
+        #add horizontal layout to layout
+        Hlayout = QHBoxLayout()
+
+        #add widgets to layouts:
         layout.addWidget(image)
-        layout.addWidget(checkbox)
-        layout.addWidget(self.combobox)
+        Hlayout.addWidget(checkbox)
+        Hlayout.addWidget(self.combobox)
+
+        #adding sub layout
+        layout.addLayout(Hlayout)
+
+        #vertical widgets below sub layout
         layout.addWidget(self.slabel)
         layout.addWidget(self.slider)
 

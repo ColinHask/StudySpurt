@@ -1,41 +1,36 @@
 import sys
-
-from PyQt5.QtCore import Qt
-from PyQt5.QtGui import QPixmap
 from PyQt5.QtWidgets import (
-    QApplication,
-    QCheckBox,
-    QComboBox,
-    QDoubleSpinBox,
-    QLabel,
-    QLineEdit,
-    QListWidget,
-    QMainWindow,
-    QSlider,
-    QSpinBox,
+    QMainWindow, QApplication,
+    QLabel, QToolBar, QAction, QStatusBar
 )
+from PyQt5.QtGui import QIcon
+from PyQt5.QtCore import Qt
 
 class MainWindow(QMainWindow):
 
     def __init__(self):
         super().__init__()
 
-        self.setWindowTitle("My App")
+        self.setWindowTitle("My Awesome App")
 
-        widget = QCheckBox()
-        widget.setCheckState(Qt.Checked)
+        label = QLabel("Hello!")
+        label.setAlignment(Qt.AlignCenter)
 
-        # For tristate: widget.setCheckState(Qt.PartiallyChecked)
-        # Or: widget.setTriState(True)
-        widget.stateChanged.connect(self.show_state)
+        self.setCentralWidget(label)
 
-        self.setCentralWidget(widget)
+        toolbar = QToolBar("My main toolbar")
+        self.addToolBar(toolbar)
 
-    def show_state(self, s):
-        print(s == Qt.Checked)
-        print(s)
-        
+        button_action = QAction("Your button", self)
+        button_action.setStatusTip("This is your button")
+        button_action.triggered.connect(self.onMyToolBarButtonClick)
+        toolbar.addAction(button_action)
+
+    def onMyToolBarButtonClick(self, s):
+        print("click", s)
+
+
 app = QApplication(sys.argv)
-window = MainWindow()
-window.show()
+w = MainWindow()
+w.show()
 app.exec()
